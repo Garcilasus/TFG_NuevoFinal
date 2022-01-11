@@ -1,0 +1,557 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../fonts/BebasNeue-Regular.eot);
+    src: url(../fonts/BebasNeue-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/BebasNeue-Regular.woff) format('woff'),
+        url(../fonts/BebasNeue-Regular.ttf) format('truetype'),
+        url(../fonts/BebasNeue-Regular.svg) format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+::-moz-selection { /* Codigo en Firefox */
+    color: #fafbfd;
+    background: #666;
+}
+
+::selection {
+    color: #fafbfd;
+    background: #666;
+}
+
+*{
+    font-family: arial;
+}
+
+.fondo {
+    background-color: #333;
+}
+
+nav {
+    width:100%;
+    top: 0;
+    position: fixed !important;
+    background-color: #333;
+    transition: all 0.5s ease;
+    z-index: 3;
+}
+
+nav.hidden {
+    transform: translate3d(0,-100%,0);
+}
+
+#logo {
+    width: 80%;
+}
+
+
+
+.enlaces {
+    text-align: center;
+    color: #fafbfd;
+    font-size: 1.3em;
+}
+
+#contenedor {
+    margin-top: 88px; /*necesario para bajar un poquito el carrusel y el contenido en gral y no coma imagen el menu superior*/
+}
+
+#contenedorAdmin {
+    margin-top: 100px;
+}
+
+#bodyAdmin {
+    background-color: #333;
+}
+
+.oculto {
+    display: none;
+}
+
+@media only screen and (min-width: 770px) {
+    .navbar-nav figure {
+        margin-top: 20px;
+    }
+} 
+.navbar-nav figure {
+    background: #333;
+}
+.navbar-nav figure a {
+    opacity: 1;
+    -webkit-transition: .6s ease-in-out;
+    transition: .6s ease-in-out;
+}
+.navbar-nav figure:hover a {
+    opacity: 1;
+    color: #333;
+    background: #fafbfd;
+
+}
+
+.active {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .info {
+        display: none;
+    }
+    #contenedor {
+        margin-top: 88px;
+    }
+
+    .enlaces {
+        text-align: center;
+        color: #fafbfd;
+        font-size: .9em;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    .carousel-item  img {
+        object-fit: slice;
+        height: 600px;
+        width: 100%;
+    }
+    .carousel-item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+@media only screen and (min-width: 801px){
+    .carousel-inner  .carousel-item  img {
+        object-fit: slice;
+        height: 90vh;
+        width: 100%;
+
+    }
+
+}
+
+.grisito {
+    background-color: #cccccc;
+}
+
+.carousel-indicators {
+    visibility:hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .eliminaResponsive {
+        display: none;
+    }
+
+}
+
+.info {
+    background-color: #333;
+    opacity: 0.5;
+
+}
+.carruselText {
+    font-weight: normal;
+    opacity: 1;
+    z-index: 200;
+}
+.centrado {
+    text-align: center;
+}
+
+.radial-gradient {
+  position:fixed;
+  top:0px;
+  left:0px;
+  margin: 0 auto;
+  height:100%;
+  width:100%;
+  
+  /*Fallback if gradeints don't work */
+  background: #333;
+  /*Linear gradient... */
+  background-image: linear-gradient(to bottom left, #333, #c7c7c7);
+}
+
+.encabezado {
+    font-family: 'Bebas Neue';
+}
+
+.icons {
+    border:1px solid black; 
+    width:50%; 
+    border-radius: 10%
+}
+
+.presentacion {
+    width:50%; 
+    border-radius: 100%
+}
+
+.paginappal {
+    color: white;
+}
+
+.paginappal:hover {
+    font-weight: bold;
+    color: white;
+}
+
+#espanol {
+    width:13%;
+}
+
+.botones{
+    border: 1px solid #333;
+    color: #333;
+}
+
+.botonDanger{
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+.botonDanger:hover {
+    background-color: #dc3545;
+    color: #fafbfd;
+}
+
+.botonDanger:focus {
+    box-shadow: 0 0 0 0.2rem #333;
+    background-color: #d8e7f3;
+    color: red;
+    transition: ease-in-out;
+    transition-duration: .5s;
+}
+
+#masInfo {
+    margin-right: 10%
+}
+
+.botones:hover {
+    background-color: #333;
+    color: #fafbfd;
+}
+
+.saltito {
+    visibility: hidden;
+}
+
+#socialFB {
+    margin: 0 auto;
+}
+.social {
+    width:80%;
+}
+
+.social:hover {
+    border-bottom: 3px solid #333;
+}
+
+.blog
+{
+    background-color: #333;
+    color: #fafbfd;
+}
+
+.blog:hover {
+    border: 1px solid #333;
+    color: #333;
+    background-color: #fafbfd;
+}
+
+#excelencia {
+    width: 30%; 
+    margin-left: -8px;
+    margin-bottom: 50px;
+}
+
+.fondo #pie {
+
+    border-right: 5px inset #fafbfd;
+    border-left: 5px inset #fafbfd; 
+    height:150px;
+}
+
+.blanco {
+    color: #fafbfd;
+}
+
+.politica {
+    text-decoration: none;
+    color: #fafbfd;
+}
+
+.politica:hover {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+#nosotros {
+    /*img 1024x370*/
+    height:600px;
+    background-image: url("../img/free-tour-santander-quienes-somos-cabecera.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px groove #cccccc;
+    background-attachment: fixed;
+}
+
+#itinerario {
+    /*img 1024x370*/
+    height:600px;
+    background-image: url("../img/free-tour-santander-itinerario.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background: url("../img/free-tour-santander-itinerario.jpg") center cover no-repeat scroll;*/
+    border-bottom: 5px groove #cccccc;
+    background-attachment: fixed;
+}
+
+#elBlog {
+    /*img 1024x370*/
+    height:600px;
+    background-image: url("../img/free-tour-santander-blog.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background: url("../img/free-tour-santander-itinerario.jpg") center cover no-repeat scroll;*/
+    border-bottom: 5px groove #cccccc;
+    background-attachment: fixed;
+}
+
+#elContacto {
+    /*img 1024x370*/
+    height:600px;
+    background-image: url("../img/free-tour-santander-contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background: url("../img/free-tour-santander-itinerario.jpg") center cover no-repeat scroll;*/
+    border-bottom: 5px groove #cccccc;
+    background-attachment: fixed;
+}
+
+#laReserva {
+    /*img 1024x370*/
+    height:500px;
+    background-image: url("../img/free-tour-santander-reservas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background: url("../img/free-tour-santander-itinerario.jpg") center cover no-repeat scroll;*/
+    border-bottom: 5px groove #cccccc;
+    background-attachment: fixed;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem #333;
+    background-color: #d8e7f3;
+    color: black;
+    transition: ease-in-out;
+    transition-duration: .5s;
+}
+/*PRUEBAS DE SCROLLDOWN*/
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 5vh;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 13px;
+    height: 13px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    z-index: 9;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 2s ease-in-out infinite;
+    -moz-animation: fade_move_down 2s ease-in-out infinite;
+    animation: fade_move_down 2s ease-in-out infinite;
+    margin-left: -5px;
+}
+
+
+/*scroll de animacion para diversos navegadores*/
+@-webkit-keyframes fade_move_down {
+    0% {
+        -webkit-transform:translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform:translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+@-moz-keyframes fade_move_down {
+    0% {
+        -moz-transform:translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -moz-transform:translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+@keyframes fade_move_down {
+    0% {
+        transform:translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform:translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+/*estilo de la tabla de seccion ITINERARIO*/
+
+.rwd-table {
+    margin: auto;
+    min-width: 300px;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+.rwd-table thead tr {
+    border-top: none;
+    background: rgb(202, 202, 202);
+    color: black;
+}
+
+.rwd-table tbody tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: rgb(225, 225, 225);
+}
+
+.rwd-table tbody tr:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+}
+
+.rwd-table thead th {
+    display: none;
+}
+
+.rwd-table td {
+    display: block;
+}
+
+.rwd-table td:first-child {
+    margin-top: .5em;
+}
+
+.rwd-table td:last-child {
+    margin-bottom: .5em;
+}
+
+.rwd-table td:before {
+    content: attr(data-th) "· ";
+    font-weight: bold;
+    width: 120px;
+    display: inline-block;
+    color: #000;
+}
+
+.rwd-table th,
+.rwd-table td {
+    text-align: left;
+}
+
+.rwd-table {
+    color: #333;
+    border-radius: .4em;
+    overflow: hidden;
+}
+
+.rwd-table tbody tr {
+    border-color: #bfbfbf;
+}
+
+.rwd-table thead th,
+.rwd-table td {
+    padding: .5em 1em;
+}
+@media screen and (max-width: 601px) {
+    .rwd-table tr:nth-child(1) {
+        border-top: none;
+    }
+}
+@media screen and (min-width: 600px) {
+    .rwd-table tbody tr:hover {
+        background-color: #d8e7f3 !important;
+    }
+    .rwd-table td:before {
+        display: none;
+    }
+    .rwd-table thead th,
+    .rwd-table td {
+        display: table-cell;
+        padding: .25em .5em;
+    }
+    .rwd-table thead th:first-child,
+    .rwd-table td:first-child {
+        padding-left: 0;
+    }
+    .rwd-table thead th:last-child,
+    .rwd-table td:last-child {
+        padding-right: 0;
+    }
+    .rwd-table thead th,
+    .rwd-table td {
+        padding: 1em !important;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .botonTabla {
+
+    }
+}
+
+/*blog*/
+
+.activeBlog{
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+.activeBlog a {
+    background-color: #333;
+    color: #fafbfd !important;
+}
+
+.pagination .page-item a {
+    color: #333;
+}
+@media only screen and (min-width: 767px) {
+    .impar {
+        display:none;
+    }
+}
