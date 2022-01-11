@@ -39,7 +39,7 @@ $email->isSMTP();
 $email->Host = "smtp.gmail.com";
 $email->SMTPAuth = true;
 $email->Username = "santanderfreetour@gmail.com";
-$email->Password = "@Password00";
+$email->Password = "15#Asir1";
 $email->Port = 465;
 $email->SMTPSecure = "ssl";
 
